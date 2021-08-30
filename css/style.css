@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+  line-height: 20px;
+  padding: 0 5%;
+
+  background: linear-gradient(45deg, rgba(19, 111, 190, 0.75), transparent 50%),
+    linear-gradient(170deg, rgba(129, 21, 21, 0.75), transparent 70%),
+    linear-gradient(280deg, rgba(46, 160, 78, 0.75), transparent 80%);
+  background-attachment: fixed;
+}
+
+.tc {
+  text-align: center;
+}
+
+/* header style  */
+
+.logo {
+  padding: 15px 0;
+  color: rgb(199, 7, 0);
+}
+
+nav ul {
+  width: 290px;
+  margin: 15px auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(199, 7, 0);
+}
+
+.active {
+  color: rgb(119, 65, 173);
+  font-weight: 450;
+  border-bottom: 2px solid rgb(112, 75, 148);
+}
+
+/* main style  */
+
+.title {
+  color: rgb(106, 59, 153);
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+.orange-title {
+  margin: 15px auto;
+  color: rgb(255, 173, 20);
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.product-list {
+  width: 60px;
+  margin: 0 auto;
+}
+
+/* product.html  */
+
+.products {
+  width: 420px;
+  margin: 0 auto;
+}
+
+.products img {
+  width: 250px;
+}
+
+.products li {
+  text-align: center;
+  margin: 75px auto;
+}
+
+.product {
+  padding-top: 11px;
+}
+
+/* about-us.html */
+
+article{
+    background: rgba(72, 185, 27, 0.15);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+}
