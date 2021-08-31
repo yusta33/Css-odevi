@@ -1,55 +1,106 @@
 <!DOCTYPE html>
-<html lang="tr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Müzik Dükkanım</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/foother.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us</title>
+    <style>
+        ul {
+        list-style: none;
+        }
+
+        .Text ul li:before {
+        content: '✓';
+        color: black;
+        text-shadow: 2px 2px rgb(42, 223, 18);
+        padding: 20px;
+        }
+        .Text ul li {
+        color: black;
+        padding: 10px;
+        font-weight: bold;
+        }
+        .teamlist a{
+            color: green;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .title{
+            font-weight: bold;
+            font-size: 2em;
+            color: rgb(43, 24, 3);
+        }
+</style>
+
 </head>
-
 <body>
-    <header id="top">
-        <h1 class="logo tc">Müzik Dükkanım</h1>
-        <nav>
+
+
+   <!-- NavBar -->
+   <nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="HomePage.html">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Product.html">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="AboutUs.html">About Us</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li> -->
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="HomePage.html">MM CARD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <input type="button" class="btn btn-success" onclick=relocate_home() value="Login">
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+   <div class="comtainer" style="background-color: white;">
+      <div class="row">
+        <div class="col-2"></div>
+
+        <div class="text-center col-sm-12 col-lg-6 col-xl-5">
+          <h2 class="title">Dolor ipsum dolor sit.</h2>
+          <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam architecto minima neque repellendus distinctio? Asperiores cupiditate delectus vero ipsa est expedita nemo soluta molestiae voluptate necessitatibus, libero odit quidem.
+          Dolores odit, est delectus officia facilis non consequatur, odio labore vitae deleniti quam ex, hic a placeat neque officiis quas modi. Dolorem optio magnam culpa itaque explicabo nihil dolores in.</p>
+          <br>
+          <p class="teamlist text-aling"><a href="Teams.html">Teams List</a></p>
+        </div>
+
+        <div class="Text col-xl-4 col-lg-6 col-sm-12 text-center " >
+            <h2 class="title">Lorem ipsum dolor sit. </h2>
             <ul>
-                <li>
-                    <a class="menu-item" href="./index.html">Ana Sayfa</a>
-                </li>
-                <li>
-                    <a class="menu-item" href="./products.html">Ürünlerimiz</a>
-                </li>
-                <li>
-                    <a class="menu-item active" href="./about-us.html">Hakkımızda</a>
-                </li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
             </ul>
-        </nav> 
-    </header> 
+        </div>
 
-    <main>
-        <h2 class="title tc">Hakkımızda</h2>
-        <article>
-            <p class="text">
-
-                Müzik Dükkanım 2021 yılında Yusuf USTA ve saz arkadaşları tarafından kurulmuştur. Çeşitli
-                müzik aletlerini uygun fiyatlar ile
-                buluşturmak için kurulmuştur.
-            </p>
-            <h3 class="orange-title">Vizyonumuz</h3>
-            <p class="text">
-                İnsanlara kaliteli müzik aletleri sağlayıp onların mutluluğunu paylaşmak! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Rerum nam in laboriosam sapiente consequuntur iure ad dolore nemo impedit nulla, repellat odit
-                distinctio nostrum magnam similique numquam veritatis quaerat quod aut corrupti. Accusantium, atque
-                necessitatibus. Laudantium inventore quae possimus laborum.
-            </p>
-
-            <h3 class="orange-title">Misyonumuz</h3>
-            <p class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat cum autem a in. Sunt placeat neque nulla corporis cumque molestiae! Non, modi? Quia corrupti animi ratione! Eum corporis maxime ipsam ratione eos veniam, necessitatibus, officia beatae, similique soluta repellat eius accusamus totam sunt natus consequuntur reiciendis.
-            </p>
-        </article>
-    </main>
-</body>
-
-</html>
+        <div class="col-1"></div>
+      </div>
+    </div>
