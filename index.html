@@ -1,55 +1,237 @@
-<!DOCTYPE html>
-<html lang="tr">
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Müzik Dükkanım</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/ionicons.min.css">
+		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/foother.css">
+  </head>
+  <body>
+    <!-- NavBar Start -->
+   
+    <nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="HomePage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="AboutUs.html">About Us</a>
+              </li>
+              <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+              </li> -->
+          </ul>
+      </div>
+      <div class="mx-auto order-0">
+          <a class="navbar-brand mx-auto" href="HomePage.html">MM CARD</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <input type="button" class="btn btn-success" onclick=relocate_home() value="Login">
+              </li>
+          </ul>
+      </div>
+    </nav>      
+   
+      <!-- Card Menu Start -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 img-fluid" src="images/output-onlinejpgtools.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 style="color: aliceblue;"><p>Lorem ipsum dolor sit.</p></h3>
+                <p><strong>Lorem, ipsum dolor. <kbd>%15 ve %60</kbd> Lorem, ipsum dolor.</strong></p>
+                <a href="#" class="btn btn-primary btn-lg emailsignup" role="button" aria-disabled="true">Lorem dolor</a>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img class="d-block w-100" src="images/output-onlinejpgtools.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 style="color: aliceblue;"><p>Lorem, ipsum.</p></h3>
+                <p><strong>Lorem ipsum dolor sit amet consectetur.</strong></p>
+                <a href="#" class="btn btn-primary btn-lg " role="button" aria-disabled="true">Lorem ipsum dolor sit.</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/output-onlinejpgtools.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 style="color: aliceblue;"><p>Lorem ipsum dolor sit.</p></h3>
+                <p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quos nesciunt dolore.</p></p>
+                <a href="#" class="btn btn-primary btn-lg " role="button" aria-disabled="true">Lorem.</a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-<body class="tc">
-        
+    <div class="container py-3">
+        <div class="row text-center">
+            <div class="col">
+            <h2 class="fw-bold">Lorem, ipsum dolor.</h2>
+            </div>
+        </div>
+    </div>
 
-    <header id="top">
-        <h1 class="logo">Müzik Dükkanım</h1>
 
-        
-        <nav>
-            <ul>
-                <li>
-                    <a class="menu-item active" href="./index.html">Ana Sayfa</a>
-                </li>
-                <li>
-                    <a class="menu-item" href="./products.html">Ürünlerimiz</a>
-                </li>
-                <li>
-                    <a class="menu-item" href="./about-us.html">Hakkımızda</a>
-                </li>
-            </ul>
-        </nav>
 
-    </header>
+      <div class="container my-0">
+          
+          <div class="row">
 
+              <div class="col-4">
+                
+                <img src="https://cdn.sanity.io/images/9kdepi1d/production/294d797750d6b6b1a0e00fa8ab122997db92549e-863x574.svg?w=160&h=106&fit=crop&fm=webp" class="img-fluid rounded mx-auto d-block" alt="...">
+                <h3 class="fw-light text-center py-3">Lorem, ipsum</h3>
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis accusantium provident quis laudantium cupiditate enim odio nobis voluptatum dolorem, perferendis totam accusamus omnis pariatur praesentium corporis ipsam eligendi sunt aliquam!</span><span>Facere, assumenda saepe dolore deleniti nesciunt animi distinctio reprehenderit maxime sequi dolores harum est dolorem quos architecto eligendi obcaecati repudiandae sint doloremque totam dolorum officia id officiis quasi libero. Nemo.</span><span>Molestiae fugit excepturi nemo quam dolor rem! Quos illo repudiandae nobis fuga. Nam, a quasi iste sint quisquam voluptatem possimus nesciunt eaque officia deserunt molestias esse.</span></p>
+              </div>
+
+              <div class="col-4 ">
+                <img src="https://cdn.sanity.io/images/9kdepi1d/production/6a5ed2a57036cbd99732311d8558882d2eaa6717-1088x826.svg?w=160&h=121&fit=crop&fm=webp" class="img-fluid rounded mx-auto d-block" alt="...">
+                <h3 class="text-center py-3 ">Lorem, ipsum</h3>
+                <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni repellendus obcaecati molestiae numquam eos officiis ducimus ipsam expedita corporis recusandae esse quam, fugiat itaque voluptatum quibusdam nulla ab earum? Repellat.</span><span>Veniam impedit cumque, perferendis quidem necessitatibus sequi rerum iste vel incidunt tempore laudantium mollitia omnis, dignissimos corrupti accusantium natus quis est sint. Veritatis laboriosam natus minima ipsa sed unde dolor.</span><span>Assumenda porro consequuntur culpa cumque eveniet! Quo tenetur ut maiores reprehenderit quae corporis! Voluptate minima at illum dicta neque, sequi  doloribus suscipit necessitatibus ducimus sit!</span></p>
+              </div>
+
+              <div class="col-4">
+               
+                <img src="https://cdn.sanity.io/images/9kdepi1d/production/a0d5d919e567c1ca122529eea4a6350ac2997198-926x749.svg?w=160&h=129&fit=crop&fm=webp" class="img-fluid rounded mx-auto d-block" alt="...">
+                <h3 class="text-center py-3">Lorem, ipsum</h3>
+                <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae hic quasi pariatur culpa perferendis et deserunt dolores consectetur voluptates, placeat quae eum sit, ipsum obcaecati consequatur ea, nemo numquam iure!</span><span>Obcaecati dolorum nesciunt consequuntur cum nihil, eaque sapiente illo esse ullam quod deleniti facilis at molestias unde ipsa, quo, ad quae expedita architecto mollitia laboriosam placeat vitae excepturi fugiat. Accusantium?</span><span>Iste, minima earum porro eligendi sequi voluptatibus eos quod in accusantium soluta ex mollitia minus ea error distinctio esse. Quisquam illum quaerat, sed ducimus cumque fugiat similique nostrum. Ut, reiciendis.</span></p>
+              </div>
+          </div>
+      </div>
+
+    <hr>
+      <!-- Jumbotron Start -->
+
+      <div class="jumbotron text-center">
+        <h1 class="">Lorem, ipsum dolor</h1>
+        <div class="container">
+          <div class="row">
+
+            <div class="col-4  py-5 border-dark">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GStQbCsBs5c" allowfullscreen></iframe>></iframe>
+              </div>
+            </div>
+
+            <div class="col-4 py-5">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QfyFWLIgBtw" allowfullscreen></iframe>></iframe>
+              </div>
+            </div>
+
+          <div class="col-4 py-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8RKDrOXape8" allowfullscreen></iframe>> </iframe>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div> 
+
+	<!-- footer -->
+  <footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                        <p>Don’t miss any updates of our new templates and extensions.!</p>
+                        <form action="" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                            <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                            <p class="mchimp-errmessage" style="display: grid;"></p>
+                            <p class="mchimp-sucmessage" style="display: grid;"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Android App</a></li>
+                            <li><a href="#">ios App</a></li>
+                            <li><a href="#">Desktop</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">My tasks</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="https://google.com" target="_blank">FAQ</a></li>
+                            <li><a href="#">Term &amp; conditions</a></li>
+                            <li><a href="#">Reporting</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Support Policy</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Download App</h3>
+                        <div class="f_social_icon">
+                            <a href="#" class="fa fa-apple"></a>
+                            <a href="#" class="fa fa-android  "></a>
+                        </div>
+                        <div class="p-2"></div>
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                          <h3 class="f-title f_600 t_color f_size_18 ">Teams</h3>
+                          <div class="f_social_icon">
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer_bg">
+            <div class="footer_bg_one"></div>
+            <div class="footer_bg_two"></div>
+        </div>
+    </div>
     
-     <main>
-         <h2 class="title">Ana Sayfa</h2>
-
-         <p class="text">
-            Müzik Dükkanım sitemize hoş geldiniz! Bu sitede çeşitli müzik aletlerini bulabilirsiniz. Uygun fiyatlarımız ve kaliteli ürünlerimiz için <a href="./products.html">Ürünlerimiz</a> sayfamızı ziyaret edebilirsiniz. 
-         </p>
-
-         <p class="orange-title">Sitemizde bulunan müzik aletleri</p>
-
-         <ul class="product-list">
-             <li>Gitar</li>
-             <li>Davul</li>
-             <li>Piyano</li>
-             <li>Keman</li>
-         </ul>
-
-     </main>
-</body>
-
+  </footer>
+</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
